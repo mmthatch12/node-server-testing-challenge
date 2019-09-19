@@ -10,5 +10,5 @@ function add(info) {
 }
 
 function remove(id) {
-    return null
+    return db('shoes').where('id', id).del()
 }
