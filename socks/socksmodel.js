@@ -6,7 +6,7 @@ module.exports = {
 }
 
 function add(info) {
-    return db('shoes').insert(info)
+    return db('shoes').insert(info, 'id')
 }
 
 function remove(id) {
